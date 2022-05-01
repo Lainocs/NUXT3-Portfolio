@@ -1,6 +1,6 @@
 <template>
     <div class="start-middle">
-        <img src="@/assets/images/nicolas-de-garrigues.webp" alt="Photo de Nicolas de Garrigues" width="800">
+        <img src="@/assets/images/nicolas-de-garrigues.webp" alt="Photo de Nicolas de Garrigues">
         <article>
             <h3>Your</h3>
             <h1>Fullstack</h1>
@@ -15,6 +15,9 @@
 </script>
 <style>
     .start-middle {
+        height: 90vh;
+        margin: 0 auto;
+        border: red 1px solid;
         position: relative;
         display: flex;
         justify-content: center;
@@ -23,29 +26,28 @@
     }
 
     .start-middle img {
+        width: 30%;
         position: absolute;
-        top: -10vh;
-        left: 15%;
-        transform: scaleX(-1);
+        top: 50%;
+        left: 10%;
+        transform: scaleX(-1) translate(-50%, -50%);
     }
 
     .start-middle article {
         position: absolute;
         right: 20%;
-        top: 20vh;
-        text-align: justify;
     }
 
     .start-middle article h1 {
         letter-spacing: 10px;
-        font-size: 6em;
+        font-size: 4vw;
         font-weight: bold;
         margin-bottom: 20px;
     }
 
     .start-middle article h2 {
         letter-spacing: 30px;
-        font-size: 4em;
+        font-size: 3vw;
         font-style: italic;
         color: rgba(255, 255, 255, 0.6);
         font-weight: lighter;
@@ -54,8 +56,24 @@
 
     .start-middle article h3 {
         letter-spacing: 50px;
-        font-size: 3em;
+        font-size: 2vw;
         font-weight: lighter;
         margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .start-middle img {
+            position: initial;
+            transform: scaleX(-1) translate(0);
+            width: 50%;
+            opacity: 0.5;
+        }
+
+        .start-middle article {
+            /* position: initial; */
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, 50%);
+        }
     }
 </style>

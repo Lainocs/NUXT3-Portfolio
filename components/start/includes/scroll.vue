@@ -20,7 +20,14 @@
         position: absolute;
         bottom: 15%;
         right: 0%;
-        width: fit-content;
         transform: rotate(90deg);
+    }
+
+    @media screen and (max-width: 1000px) {
+        .start-scroll {
+            right: 0;
+            align-items: flex-start;
+            gap: 0;
+        }
     }
 </style>
