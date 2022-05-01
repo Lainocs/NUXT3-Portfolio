@@ -1,12 +1,16 @@
 <template>
     <div class="start-scroll">
         <span>Scroll down</span>
-        <img src="@/assets/images/scroll/arrow.png" alt="Arrow" width="20">
+        <img src="@/assets/images/scroll/arrow.png" alt="Arrow" width="20" data-aos="fade-left">
     </div>
 </template>
 <script>
+    import AOS from '@/mixins/aos'
     export default {
         name: 'scroll',
+        mixins: [
+            AOS
+        ]
     }
 </script>
 <style>

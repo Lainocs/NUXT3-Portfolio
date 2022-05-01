@@ -19,4 +19,12 @@
         width: fit-content;
         transform: rotate(-90deg);
     }
+
+    @media screen and (max-width: 1000px) {
+        .start-socials {
+            transform: rotate(0deg);
+            top: 80vh;
+            left: 10vw;
+        }
+    }
 </style>

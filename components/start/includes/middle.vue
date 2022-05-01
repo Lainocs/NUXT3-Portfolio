@@ -1,7 +1,7 @@
 <template>
     <div class="start-middle">
         <img src="@/assets/images/nicolas-de-garrigues.webp" alt="Photo de Nicolas de Garrigues">
-        <article>
+        <article data-aos="fade-left">
             <h3>Your</h3>
             <h1>Fullstack</h1>
             <h2>Developer</h2>
@@ -9,15 +9,18 @@
     </div>
 </template>
 <script>
+    import AOS from '@/mixins/aos'
     export default {
-        name: 'middle'
+        name: 'middle',
+        mixins: [
+            AOS
+        ]
     }
 </script>
 <style>
     .start-middle {
         height: 90vh;
         margin: 0 auto;
-        border: red 1px solid;
         position: relative;
         display: flex;
         justify-content: center;
@@ -28,9 +31,8 @@
     .start-middle img {
         width: 30%;
         position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: scaleX(-1) translate(-50%, -50%);
+        left: 25%;
+        transform: scaleX(-1) translate(0);
     }
 
     .start-middle article {
@@ -62,6 +64,9 @@
     }
 
     @media screen and (max-width: 1000px) {
+        .start-middle {
+            top: -10vh;
+        }
         .start-middle img {
             position: initial;
             transform: scaleX(-1) translate(0);
@@ -72,7 +77,7 @@
         .start-middle article {
             /* position: initial; */
             top: 50%;
-            right: 50%;
+            left: 20%;
             transform: translate(50%, 50%);
         }
     }

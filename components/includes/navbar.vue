@@ -118,7 +118,7 @@
         }
 
         /* disable horizontal scrolling  */
-        #root {
+        #topnav {
             position: relative;
             overflow-x: hidden;
         }

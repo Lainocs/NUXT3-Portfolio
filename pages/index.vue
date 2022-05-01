@@ -5,8 +5,12 @@
 </template>
 
 <script>
+  import AOS from '@/mixins/aos'
   export default {
     name: 'index',
+    mixins: [
+      AOS
+    ]
   }
 </script>
 
