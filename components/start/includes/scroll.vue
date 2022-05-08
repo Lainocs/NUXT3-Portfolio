@@ -1,8 +1,8 @@
 <template>
-    <div class="start-scroll">
+    <a class="start-scroll" href="#about">
         <span>Scroll down</span>
-        <img src="@/assets/images/scroll/arrow.png" alt="Arrow" width="20" data-aos="fade-left">
-    </div>
+        <img src="@/assets/images/scroll/arrow.png" alt="Arrow" width="20" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+    </a>
 </template>
 <script>
     import AOS from '@/mixins/aos'
@@ -25,6 +25,9 @@
         bottom: 15%;
         right: 0%;
         transform: rotate(90deg);
+        cursor: pointer;
+        color: #fff;
+        text-decoration: none;
     }
 
     @media screen and (max-width: 1000px) {

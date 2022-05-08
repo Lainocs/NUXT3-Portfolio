@@ -1,7 +1,7 @@
 <template>
     <div class="start-middle">
-        <img src="@/assets/images/nicolas-de-garrigues.webp" alt="Photo de Nicolas de Garrigues">
-        <article data-aos="fade-left">
+        <img src="@/assets/images/nicolas-de-garrigues.webp" alt="Photo de Nicolas de Garrigues" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+        <article data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
             <h3>Your</h3>
             <h1>Fullstack</h1>
             <h2>Developer</h2>

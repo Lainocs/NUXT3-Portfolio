@@ -54,6 +54,7 @@
 <style>
     /* ******************** NAV BAR ******************** */
     .topnav {
+        overflow: hidden;
         display: flex;
         justify-content: flex-end;
         width: 100%;

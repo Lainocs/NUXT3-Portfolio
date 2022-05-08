@@ -1,6 +1,8 @@
 <template>
     <NuxtLayout name="app-layout">
-      <Start class="start" />
+      <Start id="start" class="start" />
+      <About id="about" class="about" />
+      <Skills id="skills" class="skills" />
     </NuxtLayout>
 </template>
 
@@ -9,7 +11,7 @@
   export default {
     name: 'index',
     mixins: [
-      AOS
+      AOS,
     ]
   }
 </script>
@@ -20,6 +22,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -29,13 +32,14 @@
 
   /* base */
   body {
-    background: #000000;
+    overflow-x: hidden;
+    background: #161616;
     color: #ffffff;
     font-family: 'Lato', sans-serif;
   }
 
-  .start {
-      height: 100vh;
+  .start, .about, .skills {
+    height: 100vh;
   }
 
 </style>
